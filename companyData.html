@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>CW Keller Labor Hours</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">CWKA</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <h6>
+          <a class="nav-link" href="index.html">Labor Hours - Job Specific</a>
+        </h6>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <br>
+          <ul class="nav flex-column">
+            <br>
+            <a class="btn btn-secondary btn-sm mr-4 ml-4" href="indexOct.html" role="button">October Hours by Job</a>
+            <br>
+            <a class="btn btn-secondary btn-sm mr-4 ml-4" href="indexSept.html" role="button">September Hours by Job</a>
+            <br>
+            <a class="btn btn-secondary btn-sm mr-4 ml-4" href="index.html" role="button">Committed Cost Reports</a>
+        </ul>
+
+            <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Saved reports</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Current month
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Last quarter
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Social engagement
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Year-end sale
+              </a>
+            </li> -->
+
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-8 mb-3">
+          <h3 class="h2"> Hours Budget vs Actual Total Company as of 09-30-2020</h3>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Share</button> -->
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Export</button> -->
+            </div>
+            <!-- <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button> -->
+          </div>
+        </div>
+
+        <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
+
+        <hr>
+
+        <section id="nh">
+          <h4 class="locations">New Hampshire:</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th class="table-header-column1">DEPARTMENT</th>
+                  <th class="table-header">TOTAL HOURS</th>
+                  <th class="table-header">ACTIVE HOURS</th>
+                  <th class="table-header">HOURS ON BUDGET</th>
+                  <th class="table-header">HOURS OVER BUDGET</th>
+                  <th class="table-header hide-sm">INDIRECT HOURS</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>Engineering</td>
+                  <th>723.75</th>
+                  <th>683.75</th>
+                  <th>290.75</th>
+                  <th class="budget-warning">326.50</th>
+                  <th class="hide-sm">66.50</th>
+                </tr>
+
+                <tr>
+                  <td>Machine</td>
+                  <th>492.78</th>
+                  <th>449.78</th>
+                  <th>27.22</th>
+                  <th class="budget-warning">397.45</th>
+                  <th class="hide-sm">25.11</th>
+                </tr>
+
+                <tr>
+                  <td>Bench & Finish</td>
+                  <th>1,443.38</th>
+                  <th>1,407.38</th>
+                  <th>619.90</th>
+                  <th class="budget-warning">561.89</th>
+                  <th class="hide-sm">225.59</th>
+                </tr>
+
+                <tr class="total">
+                  <td>TOTAL</td>
+                  <th class="total">2,659.91</th>
+                  <th class="total">2,540.91</th>
+                  <th class="total">937.87</th>
+                  <th class="total">1,285.84</th>
+                  <th class="total hide-sm">317.20</th>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <br>
+        <hr>
+
+        <section id="co">
+          <h4 class="locations">Colorado:</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th class="table-header-column1">DEPARTMENT</th>
+                  <th class="table-header">TOTAL HOURS</th>
+                  <th class="table-header">ACTIVE HOURS</th>
+                  <th class="table-header">HOURS ON BUDGET</th>
+                  <th class="table-header">HOURS OVER BUDGET</th>
+                  <th class="table-header hide-sm">INDIRECT HOURS</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>Engineering</td>
+                  <th>297.78</th>
+                  <th>281.78</th>
+                  <th>11.67</th>
+                  <th class="budget-warning">258.36</th>
+                  <th class="hide-sm">11.75</th>
+                </tr>
+
+                <tr>
+                  <td>Machine</td>
+                  <th>697.68</th>
+                  <th>681.68</th>
+                  <th>0.00</th>
+                  <th class="budget-warning">681.68</th>
+                  <th class="hide-sm">0.00</th>
+                </tr>
+
+                <tr>
+                  <td>Bench & Finish</td>
+                  <th>2,643.35</th>
+                  <th>2,555.35</th>
+                  <th>1,776.64</th>
+                  <th class="budget-warning">647.30</th>
+                  <th class="hide-sm">131.41</th>
+                </tr>
+
+                <tr class="total">
+                  <td>TOTAL</td>
+                  <th class="total">3,638.81</th>
+                  <th class="total">3,518.81</th>
+                  <th class="total">1,788.31</th>
+                  <th class="total">1,587.34</th>
+                  <th class="total hide-sm">143.16</th>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <br>
+        <hr>
+
+        <section id="combined">
+          <h4 class="locations">Combined:</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th class="table-header-column1">DEPARTMENT</th>
+                  <th class="table-header">TOTAL HOURS</th>
+                  <th class="table-header">ACTIVE HOURS</th>
+                  <th class="table-header">HOURS ON BUDGET</th>
+                  <th class="table-header">HOURS OVER BUDGET</th>
+                  <th class="table-header hide-sm">INDIRECT HOURS</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>Engineering</td>
+                  <th>1,021.53</th>
+                  <th>965.53</th>
+                  <th>302.42</th>
+                  <th class="budget-warning">584.86</th>
+                  <th class="hide-sm">78.25</th>
+                </tr>
+
+                <tr>
+                  <td>Machine</td>
+                  <th>1,190.46</th>
+                  <th>1,131.46</th>
+                  <th>27.22</th>
+                  <th class="budget-warning">1,079.13</th>
+                  <th class="hide-sm">25.11</th>
+                </tr>
+
+                <tr>
+                  <td>Bench & Finish</td>
+                  <th>4,086.73</th>
+                  <th>3.962.73</th>
+                  <th>2,396.54</th>
+                  <th class="budget-warning">1,209.19</th>
+                  <th class="hide-sm">357.00</th>
+                </tr>
+
+                <tr class="total">
+                  <td>TOTAL</td>
+                  <th class="total">6,298.72</th>
+                  <th class="total">6,059.72</th>
+                  <th class="total">2,726.18</th>
+                  <th class="total">2,873.18</th>
+                  <th class="total hide-sm">460.36</th>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+
+      </main>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
